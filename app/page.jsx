@@ -5,6 +5,7 @@ import Splitting from "splitting";
 import MarsLanding from "./marsLanding"; 
 import VenusLoading from "./venusLanding"; 
 import SaturnLanding from "./saturnLanding"; 
+import Image from 'next/image';
 
 function App() {
   const [currentPlanet, setCurrentPlanet] = useState('venus');
@@ -201,7 +202,7 @@ function App() {
       <div class="planet" data-planet="venus" data-active>
         <div class="planet-title">
           <h1>Venus</h1>
-          <p>Visiting Venus? Don't forget your SPF 10,000!</p>
+          <p>Visiting Venus? Don&apos;t forget your SPF 10,000!</p>
         </div>
 
         <div class="planet-details">
@@ -217,7 +218,7 @@ function App() {
         </div>
 
         <figure class="planet-figure">
-          <img src="venus.png" />
+          <Image alt="venus" src="venus.png" />
         </figure>
       </div>
 
@@ -240,14 +241,14 @@ function App() {
         </div>
 
         <figure class="planet-figure">
-          <img src="mars.png" />
+          <Image alt="mars" src="mars.png" />
         </figure>
       </div>
 
       <div class="planet" data-planet="saturn">
         <div class="planet-title">
           <h1>Saturn</h1>
-          <p>Saturn's beautiful rings are relatively young. They may have formed in the era of the dinosaurs here on Earth.</p>
+          <p>Saturn&apos;s beautiful rings are relatively young. They may have formed in the era of the dinosaurs here on Earth.</p>
         </div>
 
         <div class="planet-details">
@@ -263,7 +264,7 @@ function App() {
         </div>
 
         <figure class="planet-figure">
-          <img src="saturn.png" />
+          <Image alt="saturn" src="saturn.png" />
         </figure>
       </div>
     </div>

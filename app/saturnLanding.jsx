@@ -1,4 +1,6 @@
+'use client'
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 function SaturnLanding() {
   const [openLocation, setOpenLocation] = useState(null);
@@ -56,7 +58,7 @@ function SaturnLanding() {
         <h3 className="text-2xl font-semibold mb-4 border-b-2 border-orange-500 pb-2">Introduction</h3>
         <p className="text-gray-400">
         Saturn is the sixth planet from the Sun and the second largest planet in our solar system. Adorned with a dazzling system of icy rings, Saturn is unique among the planets.
-        It is not the only planet to have rings, but none are as spectacular or as complex as Saturn's. Like fellow gas giant Jupiter, Saturn is a massive ball made mostly of hydrogen and helium.
+        It is not the only planet to have rings, but none are as spectacular or as complex as Saturn&apos;s. Like fellow gas giant Jupiter, Saturn is a massive ball made mostly of hydrogen and helium.
         The farthest planet from Earth discovered by the unaided human eye, Saturn has been known since ancient times. The planet is named for the Roman god of agriculture and wealth, who was also the father of Jupiter.
         </p>
       </section>
@@ -64,7 +66,7 @@ function SaturnLanding() {
       <section className="relative z-10 bg-gray-800 bg-opacity-20 p-4 rounded mb-6 hover:bg-opacity-30 transition-all duration-300">
         <h3 className="text-2xl font-semibold mb-4 border-b-2 border-orange-500 pb-2">Climate on Saturn</h3>
         <p className="text-gray-400">
-        With an average temperature of minus 288 degrees Fahrenheit (minus 178 degrees Celsius), Saturn is a pretty cool planet. Although there are some small differences as one travels from the equator to the poles, much of Saturn's temperature variation is horizontal.
+        With an average temperature of minus 288 degrees Fahrenheit (minus 178 degrees Celsius), Saturn is a pretty cool planet. Although there are some small differences as one travels from the equator to the poles, much of Saturn&apos;s temperature variation is horizontal.
         </p>
       </section>
 

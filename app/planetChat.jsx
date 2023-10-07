@@ -1,7 +1,7 @@
 'use client'
 import React, { useState, useEffect, useRef } from 'react';
 
-const PlanetChat = ({ currentPlanet, onClose, onAskQuestion }) => {
+function PlanetChat({ currentPlanet, onClose, onAskQuestion }) {
   const [question, setQuestion] = useState('');
   const [chatHistory, setChatHistory] = useState([]);
   const chatMessagesRef = useRef(null);

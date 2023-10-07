@@ -7,7 +7,7 @@ import SaturnLanding from "./saturnLanding";
 import Image from 'next/image';
 import dynamic from 'next/dynamic';
 
-import PlanetChat from './PlanetChat';
+import PlanetChat from './planetChat';
 
 
 const Splitting = dynamic(() => import('splitting'), {

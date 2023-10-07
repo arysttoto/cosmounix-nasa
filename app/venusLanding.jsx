@@ -45,7 +45,7 @@ function VenusLanding() {
   return (
     <>
     <div 
-      className="fixed top-0 left-0 w-screen h-screen bg-center bg-cover blur-md opacity-60 z-[-20]" 
+      className="fixed top-0 left-0 w-screen h-screen bg-center bg-cover blur-sm opacity-60 z-[-20]" 
       style={{ backgroundImage: "url('venus_back.jpeg')" }}
     ></div>
     <div className="relative bg-black text-white max-w-2xl mx-auto p-4 overflow-hidden">
@@ -89,7 +89,7 @@ function VenusLanding() {
         ))}
       </section>
       <section className="relative z-10 bg-gray-800 bg-opacity-20 p-4 rounded mb-6 hover:bg-opacity-30 transition-all duration-300">
-        <h3 className="text-2xl font-semibold mb-4 border-b-2 border-orange-500 pb-2">Fun Facts about Mars</h3>
+        <h3 className="text-2xl font-semibold mb-4 border-b-2 border-orange-500 pb-2">Fun Facts about Venus</h3>
 
         {funFacts.map((fact, idx) => (
           <div key={idx} className="flex mb-6 items-start">

@@ -7,12 +7,44 @@ import SaturnLanding from "./saturnLanding";
 import Image from 'next/image';
 import dynamic from 'next/dynamic';
 
+import PlanetChat from './PlanetChat';
+
+
 const Splitting = dynamic(() => import('splitting'), {
   ssr: false, // This will load the component only on the client side
 });
 
 function App() {
   const [currentPlanet, setCurrentPlanet] = useState('venus');
+  const [isChatOpen, setIsChatOpen] = useState(false);
+
+  // Function to open the chat
+  const openChat = () => {
+    setIsChatOpen(true);
+  };
+
+  // Function to close the chat
+  const closeChat = () => {
+    setIsChatOpen(false);
+  };
+
+  // Function to handle asking questions
+  const askQuestion = async (question) => {
+    const response = await fetch('/api/chat', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({  
+        content: {
+          planet: currentPlanet,
+          question: question
+        }
+      }),  
+    });  
+    const answer = await response.json() 
+    return answer.answer; 
+  };  
 
   useEffect(() => {
     console.clear();
@@ -183,7 +215,19 @@ function App() {
   return(
     <>
     <div id="app" data-current-planet="venus">
-
+        <button
+          className="fixed bottom-4 left-4 p-2 z-50"
+          onClick={openChat}
+        >
+          <img src="/planetary_guide.png" alt="Chat" className="w-20 h-20" />
+        </button>
+      {isChatOpen && (
+        <PlanetChat
+          currentPlanet={currentPlanet}
+          onClose={closeChat}
+          onAskQuestion={askQuestion}
+        />
+      )} 
       <nav class="planet-nav">
         <svg viewBox="0 20 400 400" xmlns="http://www.w3.org/2000/svg">
 

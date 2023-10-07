@@ -47,7 +47,7 @@ function SaturnLanding() {
   return (
     <>
     <div 
-      className="fixed top-0 left-0 w-screen h-screen bg-center bg-cover blur-md opacity-60 z-[-20]" 
+      className="fixed top-0 left-0 w-screen h-screen bg-center bg-cover blur-sm opacity-60 z-[-20]" 
       style={{ backgroundImage: "url('saturn_back.jpeg')" }}
     ></div>
     <div className="relative bg-black text-white max-w-2xl mx-auto p-4 overflow-hidden">

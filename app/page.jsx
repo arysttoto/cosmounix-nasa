@@ -1,11 +1,15 @@
 'use client'
 import React, { useEffect, useState } from 'react';
 import './styles.css';
-import Splitting from "splitting"; 
 import MarsLanding from "./marsLanding"; 
 import VenusLoading from "./venusLanding"; 
 import SaturnLanding from "./saturnLanding"; 
 import Image from 'next/image';
+import dynamic from 'next/dynamic';
+
+const Splitting = dynamic(() => import('splitting'), {
+  ssr: false, // This will load the component only on the client side
+});
 
 function App() {
   const [currentPlanet, setCurrentPlanet] = useState('venus');
@@ -218,7 +222,7 @@ function App() {
         </div>
 
         <figure class="planet-figure">
-          <Image alt="venus" src="venus.png" />
+          <img alt="venus" src="venus.png" />
         </figure>
       </div>
 
@@ -241,7 +245,7 @@ function App() {
         </div>
 
         <figure class="planet-figure">
-          <Image alt="mars" src="mars.png" />
+          <img alt="mars" src="mars.png" />
         </figure>
       </div>
 
@@ -264,7 +268,7 @@ function App() {
         </div>
 
         <figure class="planet-figure">
-          <Image alt="saturn" src="saturn.png" />
+          <img alt="saturn" src="saturn.png" />
         </figure>
       </div>
     </div>

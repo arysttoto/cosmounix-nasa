@@ -255,13 +255,13 @@ function App() {
 
         <div class="planet-details">
           <div class="detail" data-detail="tilt" data-postfix="°">
-            4.13
+            2.6
           </div>
-          <div class="detail" data-detail="gravity" data-postfix="𝗑">
-            0.2
+          <div class="detail" data-detail="gravity" data-postfix="">
+            8.87
           </div>
-          <div class="detail" data-detail="hours">
-            20
+          <div class="detail" data-detail="hours" data-postfix="k">
+            6
           </div>
         </div>
 
@@ -278,13 +278,13 @@ function App() {
 
         <div class="planet-details">
           <div class="detail" data-detail="tilt" data-postfix="°">
-            6.13
+            25
           </div>
-          <div class="detail" data-detail="gravity" data-postfix="𝗑">
-            1.1
+          <div class="detail" data-detail="gravity" data-postfix="">
+            3.71
           </div>
           <div class="detail" data-detail="hours">
-            40
+            25
           </div>
         </div>
 
@@ -301,13 +301,13 @@ function App() {
 
         <div class="planet-details">
           <div class="detail" data-detail="tilt" data-postfix="°">
-            9.13
+            26.73
           </div>
-          <div class="detail" data-detail="gravity" data-postfix="𝗑">
-            7.3
+          <div class="detail" data-detail="gravity" data-postfix="">
+            10.44
           </div>
           <div class="detail" data-detail="hours">
-            60
+            11
           </div>
         </div>
 

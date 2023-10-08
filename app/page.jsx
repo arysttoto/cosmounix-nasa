@@ -314,7 +314,7 @@ function App() {
         <figure class="planet-figure">
           <img alt="saturn" src="saturn.png" />
         </figure>
-      </div>
+      </div> 
     </div>
     {currentPlanet == "mars" ? <MarsLanding /> : currentPlanet == "venus" ? <VenusLoading /> : <SaturnLanding />}
     </>

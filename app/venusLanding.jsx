@@ -16,6 +16,7 @@ function VenusLanding() {
     }
   ];
 
+  
   const funFacts = [
     {
       title: "Name? Venus!",

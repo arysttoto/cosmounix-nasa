@@ -17,7 +17,7 @@ function SaturnModel() {
           ar
           ar-modes="webxr scene-viewer quick-look"
           style={{ width: '300px', height: '300px' }}
-        ></model-viewer> 
+        ></model-viewer>  
       </div>
     </Suspense>
     </>

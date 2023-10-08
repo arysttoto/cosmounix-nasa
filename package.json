@@ -9,16 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@google/model-viewer": "^3.2.1",
     "@pinecone-database/pinecone": "^1.1.0",
-    "@react-three/drei": "^9.86.3",
-    "@react-three/fiber": "^8.14.5",
     "encoding": "^0.1.13",
     "langchain": "^0.0.153",
     "next": "13.5.4",
     "react": "^18",
     "react-dom": "^18",
-    "splitting": "^1.0.6",
-    "three": "^0.157.0"
+    "splitting": "^1.0.6"
   },
   "devDependencies": {
     "@types/node": "^20",

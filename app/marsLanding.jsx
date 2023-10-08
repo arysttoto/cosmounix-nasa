@@ -1,4 +1,12 @@
+'use client'
 import React, { useState } from 'react';
+import dynamic from 'next/dynamic';
+
+
+const MarsModel = dynamic(() => import('./marsModel'), {
+  loading: () => <p>Loading...</p>,
+  ssr: false  // This line is important. It disables server-side rendering for this component.
+});
 
 function MarsLanding() {
   const [openLocation, setOpenLocation] = useState(null);
@@ -69,7 +77,18 @@ function MarsLanding() {
         equatorial summer.
         </p>
       </section>
-
+      {/* Integrated Model */}
+      <section className="relative z-10 bg-gray-800 bg-opacity-20 p-4 rounded mb-6 hover:bg-opacity-30 transition-all duration-300">
+        <h3 className="text-2xl font-semibold mb-4 border-b-2 border-orange-500 pb-2">3D Model of Mars</h3>
+        
+        <div className="flex justify-center items-center">
+            <MarsModel />
+        </div>
+        
+        <div className="mt-2 text-center text-gray-400 text-sm italic">
+          Model sourced from NASA.
+        </div>
+      </section>
       <section className="relative z-10 bg-gray-800 bg-opacity-20 p-4 rounded hover:bg-opacity-30 transition-all duration-300">
         <h3 className="text-2xl font-semibold mb-4 border-b-2 border-orange-500 pb-2">Notable Locations on Mars</h3>
         

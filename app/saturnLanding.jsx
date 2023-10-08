@@ -2,6 +2,13 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 
+import dynamic from 'next/dynamic';
+
+const SaturnModel = dynamic(() => import('./saturnModel'), {
+  loading: () => <p>Loading...</p>,
+  ssr: false  // This line is important. It disables server-side rendering for this component.
+});
+
 function SaturnLanding() {
   const [openLocation, setOpenLocation] = useState(null);
   
@@ -69,7 +76,18 @@ function SaturnLanding() {
         With an average temperature of minus 288 degrees Fahrenheit (minus 178 degrees Celsius), Saturn is a pretty cool planet. Although there are some small differences as one travels from the equator to the poles, much of Saturn&apos;s temperature variation is horizontal.
         </p>
       </section>
-
+      {/* Integrated Model */}
+      <section className="relative z-10 bg-gray-800 bg-opacity-20 p-4 rounded mb-6 hover:bg-opacity-30 transition-all duration-300">
+        <h3 className="text-2xl font-semibold mb-4 border-b-2 border-orange-500 pb-2">3D Model of Saturn</h3>
+        
+        <div className="flex justify-center items-center">
+            <SaturnModel />
+        </div>
+        
+        <div className="mt-2 text-center text-gray-400 text-sm italic">
+          Model sourced from NASA.
+        </div>
+      </section>
       <section className="relative z-10 bg-gray-800 bg-opacity-20 p-4 rounded hover:bg-opacity-30 transition-all duration-300">
         <h3 className="text-2xl font-semibold mb-4 border-b-2 border-orange-500 pb-2">Notable Locations on Saturn</h3>
         

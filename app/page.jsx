@@ -219,7 +219,7 @@ function App() {
           className="fixed bottom-4 left-4 p-2 z-50"
           onClick={openChat}
         >
-          <img src="/planetary_guide.png" alt="Chat" className="w-20 h-20" />
+          <img src={currentPlanet + "_guide.jpg"} alt="Chat" className="w-20 h-20 rounded-full" />
         </button>
       {isChatOpen && (
         <PlanetChat

@@ -68,7 +68,7 @@ img {
   top: 0%;
   width: 100%;
   left: 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, transparent 30%);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, transparent 30%);
   z-index: 2;
 }
 .planet > .planet-details {
@@ -192,7 +192,13 @@ h1, h2 {
 .planet-nav tspan[x] {
   opacity: 0.6;
 }
-.planet-nav tspan:hover, .planet-nav tspan:focus {
+.planet-title, .planet-details, .planet-nav tspan {
+  opacity: 0;
+  transition: opacity var(--duration) var(--ease);
+}
+.planet[data-active] .planet-title,
+.planet[data-active] .planet-details,
+.planet-nav tspan[x] {
   opacity: 1;
 }
 .planet-nav svg {

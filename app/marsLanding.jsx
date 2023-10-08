@@ -104,6 +104,25 @@ function MarsLanding() {
           </div>
         ))}
       </section>
+      <section className="relative z-10 bg-gray-800 bg-opacity-20 p-4 rounded mb-6 hover:bg-opacity-30 transition-all duration-300">
+          <h3 className="text-2xl font-semibold mb-4 border-b-2 border-orange-500 pb-2">Starship by SpaceX</h3>
+
+          <div className="mb-6 relative">
+            <img src="starship.jpg" alt="SpaceX's Starship" className="w-full object-cover rounded-md shadow-lg mb-4"/>
+            <div className="absolute top-0 left-0 bg-black bg-opacity-40 text-white p-3 rounded-br-lg">SpaceX's Starship</div>
+          </div>
+
+          <div className="text-gray-400 space-y-3">
+            <p><a href="https://en.m.wikipedia.org/wiki/Multistage_rocket" className="text-orange-500 hover:underline" target="_blank" rel="noreferrer">Starship</a> is a two-stage to orbit super heavy lift launch vehicle under development by <a href="https://en.m.wikipedia.org/wiki/SpaceX" className="text-orange-500 hover:underline" target="_blank" rel="noreferrer">SpaceX</a>. It's currently the tallest and most powerful launch vehicle to have flown.</p>
+
+            <p>Starship can land on any dense surface in the Solar System. With refueling, it has the capability to deliver multi-ton cargo to any planet in the solar system. Furthermore, a ship equipped with cargo and crew can travel to the Moon or Mars after refueling in Earth's orbit.</p>
+
+            <ul className="list-disc pl-5 mt-2">
+              <li>Travel time to Mars: 6-9 months</li>
+              <li>Maximum capacity: 100 people</li>
+            </ul>
+          </div>
+      </section>
     </div>
     </>
   );

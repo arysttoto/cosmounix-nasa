@@ -101,6 +101,24 @@ function VenusLanding() {
           </div>
         ))}
       </section> 
+      <section className="relative z-10 bg-gray-800 bg-opacity-20 p-4 rounded mb-6 hover:bg-opacity-30 transition-all duration-300">
+        <h3 className="text-2xl font-semibold mb-4 border-b-2 border-orange-500 pb-2">Spacecraft to Venus</h3>
+
+        <div className="mb-6 relative">
+          <img src="event_venus.png" alt="NASA's Magellan Spacecraft" className="w-full max-h-64 object-cover rounded-md shadow-lg mb-4"/>
+          <div className="absolute top-0 left-0 bg-black bg-opacity-40 text-white p-3 rounded-br-lg">NASA's Magellan Spacecraft</div>
+        </div>
+
+        <div className="text-gray-400">
+          <p>Magellan was the first planetary spacecraft launched from a space shuttle. It was deployed from the cargo bay of the Space Shuttle Atlantis in 1989.</p>
+          <ul className="list-disc pl-5 mt-2">
+            <li>Launched: May 4, 1989</li>
+            <li>End of Mission: October 12, 1994</li>
+            <li>Objective: Radar map the surface of Venus</li>
+            <li>Key Findings: Mapped 98% of Venus' surface with a resolution of about 100 meters</li>
+          </ul>
+        </div>
+      </section>
     </div>
     </>
   );

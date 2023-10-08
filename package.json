@@ -9,10 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@pinecone-database/pinecone": "^1.1.0",
     "@react-three/drei": "^9.86.3",
     "@react-three/fiber": "^8.14.5",
     "encoding": "^0.1.13",
-    "langchain": "^0.0.162",
+    "langchain": "^0.0.153",
     "next": "13.5.4",
     "react": "^18",
     "react-dom": "^18",

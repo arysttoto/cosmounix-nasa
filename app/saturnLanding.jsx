@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 function SaturnLanding() {
   const [openLocation, setOpenLocation] = useState(null);
-
+  
   const locations = [
     {
       name: "Hexagon",
@@ -47,7 +47,7 @@ function SaturnLanding() {
   return (
     <>
     <div 
-      className="fixed top-0 left-0 w-screen h-screen bg-center bg-cover blur-sm opacity-60 z-[-20]" 
+      className="fixed top-0 left-0 w-screen h-screen bg-center bg-cover blur-sm z-[-20]" 
       style={{ backgroundImage: "url('saturn_back.jpeg')" }}
     ></div>
     <div className="relative bg-black text-white max-w-2xl mx-auto p-4 overflow-hidden">
@@ -104,6 +104,24 @@ function SaturnLanding() {
           </div>
         ))}
       </section> 
+      <section className="relative z-10 bg-gray-800 bg-opacity-20 p-4 rounded mb-6 hover:bg-opacity-30 transition-all duration-300">
+        <h3 className="text-2xl font-semibold mb-4 border-b-2 border-orange-500 pb-2">Cassini Mission</h3>
+              
+        <div className="mb-6 relative">
+          <img src="./cassini.gif" alt="Spectacular view shot by Cassini in 1997" className="w-full object-cover rounded-md shadow-lg mb-4"/>
+          <div className="absolute top-0 left-0 bg-black bg-opacity-40 text-white p-3 rounded-br-lg">Spectacular view shot by Cassini in 1997</div>
+        </div>
+              
+        <div className="text-gray-400 space-y-3">
+          <p>The Cassini spacecraft was launched on Oct. 15, 1997, as a collaboration among NASA, the European Space Agency, and Italy’s space agency. It carried a probe named Huygens, specifically designed to study Saturn's largest moon, Titan.</p>
+          
+          <p>It took nearly seven years for Cassini to reach Saturn. Once there, it remained in the planet's orbit for approximately 13 years, transmitting invaluable data back to Earth.</p>
+          
+          <p>Excitingly, the next pre-launch with Cassini on Saturn is slated for May 24th, 2024. You have the opportunity to join this historic journey! However, tickets are not currently available.</p>
+          
+          <p>Experience the solar system with us and marvel at views like the one captured by Cassini in 1997!</p>
+        </div>
+      </section>
     </div>
     </>
   );
